@@ -1,0 +1,52 @@
+/* d_nav.css */
+.mainmenu{
+  position : absolute;
+  margin-top : 190px;
+  width : 100%;
+  height : 43px;
+  z-index : 20;
+}
+
+#topmenu{
+  min-width : 300px;
+  background-color : RGB(250, 60, 64);
+  text-align : center;
+  height : 43px;
+  z-index : 20;
+}
+
+.mainmenu ul ul{
+  position : absolute;
+  display : none;
+  top : 43px;
+  z-index : 20;
+}
+
+.mainmenu ul ul li{
+  display : block;
+  background-color : RGB(83, 83, 83);
+  color : red;
+}
+
+.mainmenu ul li{
+  display : inline-block;
+}
+
+.mainmenu ul li a{
+  display : block;
+  width : 150px;
+  color : white;
+  line-height : 43px;
+}
+
+.mainmenu ul  li a:hover{
+  height : 43px;
+  background-color : RGB(254, 139, 142);
+  color : black;
+}
+
+.mainmenu ul ul li a:hover{
+  height : 43px;
+  background-color : orange;
+  color : black;
+}

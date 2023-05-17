@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+      var user = sessionStorage.getItem("user");
+      var idarr = JSON.parse(localStorage.getItem("id"));
+      var pwarr = JSON.parse(localStorage.getItem("pw"));
+      document.write("회원탈퇴를 위해 비밀번호를 입력하세요");
+
+      function cancel() {
+        window.location.href = "welcome.html";
+      }
+
+      function deleteacc() {
+        var pw = document.getElementById("pw").value;
+        if (pw == "") alert("비밀번호를 입력하세요");
+        else {
+          if (pw == pwarr[user]) {
+            var c = confirm("정말로 탈퇴하겠습니까?");
+            if (c == true) {
+              idarr.splice(user, 1);
+              pwarr.splice(user, 1);
+              sessionStorage.removeItem("user");
+              localStorage.setItem("id", JSON.stringify(idarr));
+              localStorage.setItem("pw", JSON.stringify(pwarr));
+              alert("탈퇴되었습니다");
+              window.location.href = "login.html";
+            }
+          }
+          else alert("비밀번호가 틀렸습니다");
+        }
+      }
+
+      window.onload = function() {
+        if (user == null) document.write("잘못된 접근입니다");
+      }
+    </script>
+  </head>
+  <body>
+    <br>
+    <input type="password" id="pw" placeholder="비밀번호">
+    <br>
+    <button type="button" name="button" onclick="cancel()">취소</button>
+    <button type="button" name="button" onclick="deleteacc()">탈퇴</button>
+  </body>
+</html>

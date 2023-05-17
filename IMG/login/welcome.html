@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+      var user = sessionStorage.getItem("user");
+      var idarr = JSON.parse(localStorage.getItem("id"));
+
+      function logout() {
+        sessionStorage.removeItem("user");
+        window.location.href = "login.html";
+      }
+
+      function changepw() {
+        window.location.href = "changepw.html";
+      }
+
+      function deleteacc() {
+        window.location.href = "deleteacc.html";
+      }
+
+      window.onload = function() {
+        var text = document.getElementById("text");
+        var delbutton = document.getElementById("delbutton");
+        if (user == null) document.write("잘못된 접근입니다");
+        else text.innerHTML = idarr[user] + "님 안녕하세요";
+        if (!parseInt(user)) delbutton.style.display = "none";
+      }
+    </script>
+  </head>
+  <body>
+    <span id="text"></span>
+    <div>
+      <button type="button" name="button" onclick="logout()">로그아웃</button>
+      <button type="button" name="button" onclick="changepw()">비밀번호변경</button>
+      <button type="button" name="button" onclick="deleteacc()" id="delbutton">회원탈퇴</button>
+    </div>
+  </body>
+</html>

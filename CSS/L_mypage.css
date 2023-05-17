@@ -1,0 +1,84 @@
+/* L_mypage.css */
+#login_form{
+  position : absolute;
+  top : 300px;
+  left : 50%;
+  transform : translateX(-50%);
+  padding-top : 120px;
+  width : 1300px;
+  height : 500px;
+  text-align : center;
+  font-size : 30pt;
+}
+#myp{
+  position : absolute;
+  top : 0px;
+}
+
+button{
+  border : none;
+  background-color : none;
+  margin-top : 40px;
+  font-size : 30pt;
+}
+
+#profill{
+  position : absolute;
+  top : 150px;
+  left : 80px;
+  width : 300px;
+  height : 300px;
+}
+#proc{
+  position : absolute;
+  top : 325px;
+  left : -20px;
+}
+
+#bigy, span{
+  position : absolute;
+  left : 730px;
+  top : 100px;
+}
+#bigy{
+  top : 150px;
+  left : 490px;
+}
+
+#idcheck{
+  position : absolute;
+  top : -5px;
+}
+
+#cb{
+  margin-top : 30px;
+  margin-right : 20px;
+  -ms-transform: scale(3);
+  -moz-transform: scale(3);
+  -webkit-transform: scale(3);
+  -o-transform: scale(3);
+}
+
+#jumun, #logout_bt, #pwc, #delbutton{
+  position : absolute;
+}
+
+#jumun{
+  top : 260px;
+  left : 490px;
+  width : 250px;
+  height : 250px;
+}
+#logout_bt, #pwc, #delbutton{
+  left : 880px;
+  width : 250px;
+}
+#logout_bt{
+  top : 260px;
+}
+#pwc{
+  top : 370px;
+}
+#delbutton{
+  top : 480px;
+}

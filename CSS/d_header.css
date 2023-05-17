@@ -1,0 +1,95 @@
+/* d_header.css */
+#logo {
+  position : absolute;
+  top : 20px;
+  left : 25%;
+  transform : translateX(-75%);
+  width : 19%;
+  height : 150px;
+}
+
+#search{
+  position : absolute;
+  top : 35px;
+  left : 50%;
+  transform : translateX(-50%);
+  width : 30%;
+  height : 120px;
+  text-align : center;
+}
+
+#search input[type=text]{
+  position : relative;
+  margin-top : 35px;
+  font-size : 30pt;
+  border : 1pt solid RGB(250, 60, 64);
+}
+
+#search_submit{
+  position : relative;
+  background-color : none;
+  top : 10px;
+  width : 67px;
+  height : 48px;
+  font-size : 0pt;
+  border : 1pt solid RGB(250, 60, 64);
+}
+
+#eventtag{
+    position : absolute;
+    z-index : 50;
+    width : 100%;
+    font-size : 15pt;
+    font-weight : bold;
+}
+
+#chucuntag{
+  position : absolute;
+  margin-top : 5px;
+  width : 100%;
+  font-size : 13pt;
+  font-weight : bold;
+}
+
+#member{
+  float : right;
+  margin-top : 5px;
+  margin-right : 20px;
+}
+
+#member a{
+  display : inline-block;
+  margin-left : 5px;
+}
+
+#mem_menu{
+  position : absolute;
+  top : 45px;
+  left : 75%;
+  transform : translateX(-7%);
+  width : 200px;
+  height : 100px;
+}
+
+#event_check{
+  float : left;
+  width : 100px;
+  height : 100px;
+}
+
+#baesong{
+  float : right;
+  width : 100px;
+  height : 100px;
+}
+
+#article_banner{
+  position : absolute;
+  z-index : 10;
+  width : 150px;
+  height : 200px;
+  /*left : 1730px;*/
+  left : 91%;
+  transform : translateX(-9%);
+  top : 360px;
+}

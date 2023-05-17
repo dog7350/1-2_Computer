@@ -1,0 +1,27 @@
+/* L_login.css */
+#login_form{
+  position : absolute;
+  top : 300px;
+  left : 50%;
+  transform : translateX(-50%);
+  background-color : lightgreen;
+  width : 1000px;
+  height : 400px;
+  text-align : center;
+  font-size : 30pt;
+}
+
+#user, #pw, button{
+  margin-top : 50px;
+  margin-left : 30px;
+  font-size : 30pt;
+}
+
+#cb{
+  margin-top : 30px;
+  margin-right : 20px;
+  -ms-transform: scale(3);
+  -moz-transform: scale(3);
+  -webkit-transform: scale(3);
+  -o-transform: scale(3);
+}

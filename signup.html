@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html" charset="utf-8">
+    <!--메타데이터 끝-->
+
+    <title>느그컴은 우리컴</title>
+    <!--파일 타이틀 끝-->
+
+    <link type="text/css" rel="stylesheet" href="CSS/d_default.css">
+    <link type="text/css" rel="stylesheet" href="CSS/d_header.css">
+    <link type="text/css" rel="stylesheet" href="CSS/d_nav.css">
+    <link type="text/css" rel="stylesheet" href="CSS/d_footer.css">
+    <link type="text/css" rel="stylesheet" href="CSS/L_signup.css">
+    <script src="Script/jquerymin.js"></script>
+    <script src="Script/d_imgchange.js"></script>
+    <script src="Script/nav.js"></script>
+    <script src="Script/m_article_banner.js"></script>
+    <script src="Script/signup.js"></script>
+    <!--파일 로드 끝-->
+  </head>
+
+  <body>
+    <header>
+      <div id="member">
+        <a href="login.html"><img src="IMG/member_login.png" onmouseover="backcolorover(this)" onmouseout="backcolorout(this)"></a>
+        <a href="signup.html"><img src="IMG/member_sign.png" onmouseover="backcolorover(this)" onmouseout="backcolorout(this)"></a>
+        <a href="#"><img src="IMG/member_mypage.png" onmouseover="backcolorover(this)" onmouseout="backcolorout(this)"></a>
+        <a href="#"><img src="IMG/member_center.png" onmouseover="backcolorover(this)" onmouseout="backcolorout(this)"></a>
+      </div>
+
+      <a href="main.html">
+        <img id="logo" src="IMG/logo_out.png" alt="느그컴" onmouseover="logo_interval()" onmouseout="clear_logo_interval()">
+      </a>
+
+      <form id="search">
+        <div id="eventtag">EVENT 100만 고객을 잡아라! (잡기만 함)</div>
+        <input type="text" name="" value="">
+        <button id="search_submit"type="button"><img src="IMG/search_button_out.png" onmousedown="changedown(this, 'search_button')" onmouseup="changeup(this, 'search_button')"></button>
+        <div id="chucuntag">상품 | 온라인 견적 | 호환성 체크 | 느그컴은 우리컴 | 우리컴은 느그컴</div>
+      </form>
+
+      <div id="mem_menu">
+        <div id="event_check"><a href="#"><img src="IMG/event.png" onmouseover="backcolorover(this)" onmouseout="backcolorout(this)"></a></div>
+        <div id="baesong"><a href="#"><img src="IMG/baesong.png" onmouseover="backcolorover(this)" onmouseout="backcolorout(this)"></a></div>
+      </div>
+
+      <article>
+        <div id="article_banner">
+          <a href="#"><img src="IMG/article_banner.png"></a>
+        </div>
+      </article>
+    </header>
+    <!-- 로고 끝 -->
+
+    <nav>
+      <div class="mainmenu">
+        <ul id="topmenu">
+          <li><a href="main.html"><img src="IMG/nav_home.png"></a></li>
+          <li><a href="#"><img src="IMG/nav_all.png"></a></li>
+          <li><a href="#"><img src="IMG/nav_mb.png"></a>
+            <ul>
+              <li><a href="#">GIGABYTE</a></li>
+              <li><a href="#">ASUS</a></li>
+              <li><a href="#">MSI</a></li>
+              <li><a href="#">ASROCK</a></li>
+              <li><a href="#">neugeu</a></li>
+            </ul>
+          </li>
+          <li><a href="#"><img src="IMG/nav_cpu.png"></a>
+            <ul>
+              <li><a href="#">INTEL</a></li>
+              <li><a href="#">AMD</a></li>
+              <li><a href="#">neugeu</a></li>
+            </ul>
+          </li>
+          <li><a href="#"><img src="IMG/nav_gpu.png"></a>
+            <ul>
+              <li><a href="#">GALAXY</a></li>
+              <li><a href="#">GIGABYTE</a></li>
+              <li><a href="#">ASUS</a></li>
+              <li><a href="#">이엠텍</a></li>
+              <li><a href="#">neugeu</a></li>
+            </ul>
+          </li>
+          <li><a href="#"><img src="IMG/nav_hdd.png"></a>
+            <ul>
+              <li><a href="#">HDD</a></li>
+              <li><a href="#">SSD</a></li>
+              <li><a href="#">neugeu</a></li>
+            </ul>
+          </li>
+          <li><a href="#"><img src="IMG/nav_ram.png"></a>
+            <ul>
+              <li><a href="#">삼성</a></li>
+              <li><a href="#">neugeu</a></li>
+            </ul>
+          </li>
+          <li><a href="#"><img src="IMG/nav_odd.png"></a>
+            <ul>
+              <li><a href="#">삼성</a></li>
+              <li><a href="#">LG</a></li>
+              <li><a href="#">neugeu</a></li>
+            </ul>
+          </li>
+          <li><a href="#"><img src="IMG/nav_power.png"></a>
+            <ul>
+              <li><a href="#">FSP</a></li>
+              <li><a href="#">POWEREX</a></li>
+              <li><a href="#">ANTEC</a></li>
+              <li><a href="#">MICRONICS</a></li>
+              <li><a href="#">neugeu</a></li>
+            </ul>
+          </li>
+        </ul>
+        <script>
+          $(".mainmenu ul li").hover(function(){
+            $(this).find("ul").stop().fadeToggle(300);
+          });
+        </script>
+      </div>
+    </nav>
+    <!-- 메뉴 끝 -->
+
+    <section>
+      <form id="login_form">
+        <input id="user" placeholder="아이디">
+        <button id="idcheck" type="button" name="button" onclick="check(this)">중복확인</button>
+        <br>
+        <input type="password" id="pw" placeholder="비밀번호">
+        <br>
+        <input type="password" id="pwconfirm" placeholder="비밀번호확인">
+        <br>
+        <button type="button" name="button" onclick="cancel()">취소</button>
+        <button type="button" name="button" onclick="signup()">가입</button>
+      </form>
+    </section>
+
+    <footer>
+      <div id="foot" style="margin-top : 1070px;">
+        <img src="IMG/footer.jpg">
+      </div>
+    </footer>
+    <!-- 푸터 끝 -->
+  </body>
+</html>
